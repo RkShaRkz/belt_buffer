@@ -33,6 +33,7 @@ data:extend(
 			starting_top = tint(basic_belt_starting_top),
 			starting_bottom = tint(basic_belt_starting_bottom),
 			starting_side = tint(basic_belt_starting_side),
+			fast_replaceable_group = "transport-belt",
 			speed = 0.03125*4,
 			structure =
 			{
@@ -81,6 +82,7 @@ data:extend(
 			corpse = "small-remnants",
 			open_sound = { filename = "__base__/sound/metallic-chest-open.ogg", volume=0.65 },
 			close_sound = { filename = "__base__/sound/metallic-chest-close.ogg", volume = 0.7 },
+			fast_replaceable_group = "transport-belt",
 			resistances =
 			{
 				{
@@ -123,6 +125,7 @@ data:extend(
 			corpse = "small-remnants",
 			open_sound = { filename = "__base__/sound/metallic-chest-open.ogg", volume=0.65 },
 			close_sound = { filename = "__base__/sound/metallic-chest-close.ogg", volume = 0.7 },
+			fast_replaceable_group = "transport-belt",
 			resistances =
 			{
 				{
@@ -165,6 +168,7 @@ data:extend(
 			corpse = "small-remnants",
 			open_sound = { filename = "__base__/sound/metallic-chest-open.ogg", volume=0.65 },
 			close_sound = { filename = "__base__/sound/metallic-chest-close.ogg", volume = 0.7 },
+			fast_replaceable_group = "transport-belt",
 			resistances =
 			{
 				{
@@ -209,6 +213,7 @@ data:extend(
 			corpse = "small-remnants",
 			open_sound = { filename = "__base__/sound/metallic-chest-open.ogg", volume=0.65 },
 			close_sound = { filename = "__base__/sound/metallic-chest-close.ogg", volume = 0.7 },
+			fast_replaceable_group = "transport-belt",
 			resistances =
 			{
 				{
@@ -248,6 +253,7 @@ item.icon = "__belt_buffer__/buffer-icon.png"
 item.localised_name = {"belt-buffer"}
 item.localised_description = {"belt-buffer-description"}
 item.order = "z-belt-buffer"
+item.fast_replaceable_group = "transport-belt"
 data:extend({item})
 
 local item = util.table.deepcopy(data.raw.item["transport-belt"])
@@ -257,6 +263,7 @@ item.place_result = "belt-buffer-hl"
 item.icon = "__belt_buffer__/buffer-icon.png"
 item.localised_name = {"belt-buffer"}
 item.localised_description = {"belt-buffer-description"}
+item.fast_replaceable_group = "transport-belt"
 data:extend({item})
 
 local item = util.table.deepcopy(data.raw.item["transport-belt"])
@@ -266,6 +273,7 @@ item.place_result = "belt-buffer-vu"
 item.icon = "__belt_buffer__/buffer-icon.png"
 item.localised_name = {"belt-buffer"}
 item.localised_description = {"belt-buffer-description"}
+item.fast_replaceable_group = "transport-belt"
 data:extend({item})
 
 local item = util.table.deepcopy(data.raw.item["transport-belt"])
@@ -275,6 +283,7 @@ item.place_result = "belt-buffer-hr"
 item.icon = "__belt_buffer__/buffer-icon.png"
 item.localised_name = {"belt-buffer"}
 item.localised_description = {"belt-buffer-description"}
+item.fast_replaceable_group = "transport-belt"
 data:extend({item})
 
 local item = util.table.deepcopy(data.raw.item["transport-belt"])
@@ -284,6 +293,7 @@ item.place_result = "belt-buffer-vd"
 item.icon = "__belt_buffer__/buffer-icon.png"
 item.localised_name = {"belt-buffer"}
 item.localised_description = {"belt-buffer-description"}
+item.fast_replaceable_group = "transport-belt"
 data:extend({item})
 
 local combinator = util.table.deepcopy(data.raw["decider-combinator"]["decider-combinator"])
@@ -292,6 +302,7 @@ combinator.icon = "__belt_buffer__/buffer-icon.png"
 combinator.localised_name = {"belt-buffer"}
 combinator.localised_description = {"belt-buffer-description"}
 combinator.active_energy_usage = "1KW"
+combinator.fast_replaceable_group = "transport-belt"
 combinator.sprites.east = 
 {
 	filename = "__belt_buffer__/buffer-h.png",
