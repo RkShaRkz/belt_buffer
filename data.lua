@@ -10,6 +10,9 @@ local tint = function(sprite, tint)
 	return sprite
 end
 
+--TODO make a [2,128] setting for this
+local INVENTORY_SIZE = 5
+
 data:extend(
 	{
 		{
@@ -97,7 +100,7 @@ data:extend(
 			collision_box = {{-0.25, -0.75}, {0.25, 0.75}},
 			selection_box = {{-0.5, -1}, {0.5, 1}},
 			fast_replaceable_group = "container",
-			inventory_size = 2,
+			inventory_size = INVENTORY_SIZE,
 			vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
 			picture =
 			{
@@ -140,7 +143,7 @@ data:extend(
 			collision_box = {{-0.25, -0.75}, {0.25, 0.75}},
 			selection_box = {{-0.5, -1}, {0.5, 1}},
 			fast_replaceable_group = "container",
-			inventory_size = 2,
+			inventory_size = INVENTORY_SIZE,
 			vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
 			picture =
 			{
@@ -183,7 +186,7 @@ data:extend(
 			collision_box = {{-0.75, -0.25}, {0.75, 0.25}},
 			selection_box = {{-1, -0.5}, {1, 0.5}},
 			fast_replaceable_group = "container",
-			inventory_size = 2,
+			inventory_size = INVENTORY_SIZE,
 			vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
 			picture =
 			{
@@ -228,7 +231,7 @@ data:extend(
 			collision_box = {{-0.75, -0.25}, {0.75, 0.25}},
 			selection_box = {{-1, -0.5}, {1, 0.5}},
 			fast_replaceable_group = "container",
-			inventory_size = 2,
+			inventory_size = INVENTORY_SIZE,
 			vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
 			picture =
 			{
