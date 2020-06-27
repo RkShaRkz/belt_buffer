@@ -359,14 +359,6 @@ end
 
 
 
---script.on_event(defines.events.on_robot_mined_entity, mined_entity)
---script.on_event(defines.events.on_player_mined_entity, mined_entity)
---script.on_event(defines.events.on_robot_built_entity, built_entity)
---script.on_event(defines.events.on_built_entity, built_entity)
---script.on_load(remote_conditionals)
---script.on_init(remote_conditionals)
-
-
 ------------------
 -- library part --
 ------------------
