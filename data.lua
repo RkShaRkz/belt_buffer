@@ -33,6 +33,7 @@ data:extend(
 			starting_top = tint(basic_belt_starting_top),
 			starting_bottom = tint(basic_belt_starting_bottom),
 			starting_side = tint(basic_belt_starting_side),
+			fast_replaceable_group = "transport-belt",
 			speed = 0.03125*4,
 			structure =
 			{
@@ -248,6 +249,7 @@ item.icon = "__belt_buffer__/buffer-icon.png"
 item.localised_name = {"belt-buffer"}
 item.localised_description = {"belt-buffer-description"}
 item.order = "z-belt-buffer"
+item.fast_replaceable_group = "transport-belt"
 data:extend({item})
 
 local item = util.table.deepcopy(data.raw.item["transport-belt"])
@@ -292,6 +294,7 @@ combinator.icon = "__belt_buffer__/buffer-icon.png"
 combinator.localised_name = {"belt-buffer"}
 combinator.localised_description = {"belt-buffer-description"}
 combinator.active_energy_usage = "1KW"
+combinator.fast_replaceable_group = "transport-belt"
 combinator.sprites.east = 
 {
 	filename = "__belt_buffer__/buffer-h.png",
