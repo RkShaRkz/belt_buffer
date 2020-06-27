@@ -6,6 +6,6 @@
   "contact": "",
   "homepage": "",
   "description": "A buffer for your belts",
-  "factorio_version": "0.18",
+  "factorio_version": "0.16",
   "dependencies": ["base >= 0.16.5"]
 }
