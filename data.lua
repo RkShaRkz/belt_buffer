@@ -15,7 +15,7 @@ data:extend({
     type = "loader",
     name = "belt-buffing-loader",
     icon = "__belt_buffer__/buffer-icon.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation", "fast-replaceable-no-build-while-moving", "placeable-off-grid"},
     max_health = 100,
     filter_count = 5,
@@ -70,7 +70,7 @@ data:extend({
     type = "container",
     name = "belt-buffer-vu",
     icon = "__belt_buffer__/buffer-icon.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "belt-buffer-proxy"},
     max_health = 150,
@@ -112,7 +112,7 @@ data:extend({
     type = "container",
     name = "belt-buffer-vd",
     icon = "__belt_buffer__/buffer-icon.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "belt-buffer-proxy"},
     max_health = 150,
@@ -154,7 +154,7 @@ data:extend({
     type = "container",
     name = "belt-buffer-hl",
     icon = "__belt_buffer__/buffer-icon.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "belt-buffer-proxy"},
     max_health = 150,
@@ -196,7 +196,7 @@ data:extend({
     type = "container",
     name = "belt-buffer-hr",
     icon = "__belt_buffer__/buffer-icon.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "belt-buffer-proxy"},
     localised_name = {"belt-buffer"},
@@ -286,7 +286,7 @@ combinator.name = "belt-buffer-proxy"
 combinator.icon = "__belt_buffer__/buffer-icon.png"
 combinator.localised_name = {"belt-buffer"}
 combinator.localised_description = {"belt-buffer-description"}
-combinator.active_energy_usage = "0J"
+combinator.active_energy_usage = "1KW"
 combinator.sprites.east = 
 {
   filename = "__belt_buffer__/buffer-h.png",
