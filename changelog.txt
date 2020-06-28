@@ -1,0 +1,9 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Date: 2020.6.28
+  Changes:
+    - rewrote to use the event handler
+  Added:
+    - new mod setting for buffer capacity
+  Fixes:
+    - whatever else that was broken

@@ -10,8 +10,7 @@ local tint = function(sprite, tint)
 	return sprite
 end
 
---TODO make a [2,128] setting for this
-local INVENTORY_SIZE = 5
+local INVENTORY_SIZE = settings.startup["belt-buffer-capacity"].value
 
 data:extend(
 	{
@@ -19,7 +18,7 @@ data:extend(
 			type = "loader",
 			name = "belt-buffing-loader",
 			icon = "__belt_buffer__/buffer-icon.png",
-			icon_size = 64,
+			icon_size = 32,
 			flags = {"placeable-neutral", "player-creation", "fast-replaceable-no-build-while-moving", "placeable-off-grid"},
 			max_health = 100,
 			filter_count = 5,
@@ -78,7 +77,7 @@ data:extend(
 			type = "container",
 			name = "belt-buffer-vu",
 			icon = "__belt_buffer__/buffer-icon.png",
-			icon_size = 64,
+			icon_size = 32,
 			flags = {"placeable-neutral", "player-creation"},
 			minable = {mining_time = 1, result = "belt-buffer-proxy"},
 			max_health = 150,
@@ -121,7 +120,7 @@ data:extend(
 			type = "container",
 			name = "belt-buffer-vd",
 			icon = "__belt_buffer__/buffer-icon.png",
-			icon_size = 64,
+			icon_size = 32,
 			flags = {"placeable-neutral", "player-creation"},
 			minable = {mining_time = 1, result = "belt-buffer-proxy"},
 			max_health = 150,
@@ -164,7 +163,7 @@ data:extend(
 			type = "container",
 			name = "belt-buffer-hl",
 			icon = "__belt_buffer__/buffer-icon.png",
-			icon_size = 64,
+			icon_size = 32,
 			flags = {"placeable-neutral", "player-creation"},
 			minable = {mining_time = 1, result = "belt-buffer-proxy"},
 			max_health = 150,
@@ -207,7 +206,7 @@ data:extend(
 			type = "container",
 			name = "belt-buffer-hr",
 			icon = "__belt_buffer__/buffer-icon.png",
-			icon_size = 64,
+			icon_size = 32,
 			flags = {"placeable-neutral", "player-creation"},
 			minable = {mining_time = 1, result = "belt-buffer-proxy"},
 			localised_name = {"belt-buffer"},
@@ -253,6 +252,7 @@ local item = util.table.deepcopy(data.raw.item["transport-belt"])
 item.name = "belt-buffer-proxy"
 item.place_result = "belt-buffer-proxy"
 item.icon = "__belt_buffer__/buffer-icon.png"
+item.icon_size = 32
 item.localised_name = {"belt-buffer"}
 item.localised_description = {"belt-buffer-description"}
 item.order = "z-belt-buffer"
@@ -264,6 +264,7 @@ item.name = "belt-buffer-proxy-hl"
 item.flags = {"hidden"}
 item.place_result = "belt-buffer-hl"
 item.icon = "__belt_buffer__/buffer-icon.png"
+item.icon_size = 32
 item.localised_name = {"belt-buffer"}
 item.localised_description = {"belt-buffer-description"}
 item.fast_replaceable_group = "transport-belt"
@@ -274,6 +275,7 @@ item.name = "belt-buffer-proxy-vu"
 item.flags = {"hidden"}
 item.place_result = "belt-buffer-vu"
 item.icon = "__belt_buffer__/buffer-icon.png"
+item.icon_size = 32
 item.localised_name = {"belt-buffer"}
 item.localised_description = {"belt-buffer-description"}
 item.fast_replaceable_group = "transport-belt"
@@ -284,6 +286,7 @@ item.name = "belt-buffer-proxy-hr"
 item.flags = {"hidden"}
 item.place_result = "belt-buffer-hr"
 item.icon = "__belt_buffer__/buffer-icon.png"
+item.icon_size = 32
 item.localised_name = {"belt-buffer"}
 item.localised_description = {"belt-buffer-description"}
 item.fast_replaceable_group = "transport-belt"
@@ -294,6 +297,7 @@ item.name = "belt-buffer-proxy-vd"
 item.flags = {"hidden"}
 item.place_result = "belt-buffer-vd"
 item.icon = "__belt_buffer__/buffer-icon.png"
+item.icon_size = 32
 item.localised_name = {"belt-buffer"}
 item.localised_description = {"belt-buffer-description"}
 item.fast_replaceable_group = "transport-belt"
@@ -302,6 +306,7 @@ data:extend({item})
 local combinator = util.table.deepcopy(data.raw["decider-combinator"]["decider-combinator"])
 combinator.name = "belt-buffer-proxy"
 combinator.icon = "__belt_buffer__/buffer-icon.png"
+combinator.icon_size = 32
 combinator.localised_name = {"belt-buffer"}
 combinator.localised_description = {"belt-buffer-description"}
 combinator.active_energy_usage = "1KW"
