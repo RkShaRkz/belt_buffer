@@ -10,8 +10,7 @@ local tint = function(sprite, tint)
 	return sprite
 end
 
---TODO make a [2,128] setting for this
-local INVENTORY_SIZE = 5
+local INVENTORY_SIZE = settings.startup["belt-buffer-capacity"].value
 
 data:extend(
 	{
